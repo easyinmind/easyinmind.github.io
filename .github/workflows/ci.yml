@@ -12,10 +12,10 @@ jobs:
       uses: actions/checkout@master
 
     - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@master
+      uses: JamesIves/github-pages-deploy-action@4.0.0
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN_CI }}
-        BRANCH: blog
+        BRANCH: gh-page
         FOLDER: docs/.vuepress/dist
         BUILD_SCRIPT: npm install && npm run build 
         
