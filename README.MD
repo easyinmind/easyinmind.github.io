@@ -1,21 +1,22 @@
-# Easyinmind
+## Easyinmind's blog 📱 💻
+> 基于 vuepree voding theme
 
-## 本地运行
+[🌾点击访问](https://blog.easyinmind.top/)
+### 本地运行 ➡️
 ```
 npm run dev
 ```
-[本地运行](http://localhost:8080/)
-## 打包
+[http://localhost:8080/](http://localhost:8080/)
+### 编译打包 ➡️
 ```
 npm run build
 ```
-## 分支
-master: 源码
-blog: 编译文件
-## 使用github action发布
-> 监听 master 分支 push，打包到 blog 分支。  
-> .github.io仓库 解析默认分支，更改默认分支为 blog。  
-> 设定 Source => blog
+### 分支 🛤
++ *master*: 保存源文件
++ *blog*: 编译后文件保存分支、默认分支
 
-## 发布
+### 发布 🦍
 ***只需要推送 master 分支***
+> 使用 github action, 监听 master 分支 push，编译到 blog 分支。  
++ easyinmind.github.io命名仓库会解析默认的分支，所以更改默认分支为 blog。   
++ 设定 github page 的 Source 为 blog 分支
