@@ -9,7 +9,9 @@ npm run dev
 ```
 npm run build
 ```
-
+## 分支
+master: 源码
+blog: 编译文件
 ## 使用github action发布
 > 监听 master 分支 push，打包到 blog 分支。  
 > .github.io仓库 解析默认分支，更改默认分支为 blog。  
