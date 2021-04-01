@@ -3,8 +3,8 @@ home: true
 # heroImage: /img/photo.jpg
 heroText: Easyinmind
 tagline: 冰冻三尺，非一日之寒。
-# actionText: 开始吧
-# actionLink: /fe/
+# actionText: 关于我
+# actionLink: /about/
 # /img/bg.jpg
 bannerBg: none 
 # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | 
@@ -25,7 +25,7 @@ bannerBg: none
 #     # imgUrl: /img/other.png
 
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
-# postList: detailed
+# postList: simple
 # 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
 # simplePostListLength: 10 
 ---

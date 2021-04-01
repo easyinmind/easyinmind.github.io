@@ -37,7 +37,7 @@ module.exports = [
     ],
   },
   {
-    text: "🌵 阅读",
+    text: "🌵 笔记",
     items: [{ text: "🦉《你不知道的js》", link: "/book1/" }],
   },
   {
@@ -45,10 +45,10 @@ module.exports = [
     link: "/archives/",
     items: [
       { text: "🍉 日常记录", link: "/live/" },
+      { text: "🍏 关于我", link: "/about/" },
       { text: "🍋 分类", link: "/categories/" },
       { text: "🍇 标签", link: "/tags/" },
       { text: "🥑 归档", link: "/archives/" },
-      { text: "🍏 关于", link: "/about/" },
     ],
   },
 ];

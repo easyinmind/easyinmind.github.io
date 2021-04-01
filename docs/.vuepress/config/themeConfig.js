@@ -38,9 +38,9 @@ module.exports = {
   //   showToArticle: true, // 显示到文章页底部，默认true
   //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
   // },
-  // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
+  rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
   // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
-  // pageButton: false, // 是否显示快捷翻页按钮，默认true
+  pageButton: false, // 是否显示快捷翻页按钮，默认true
 
   sidebar: "structuring", // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
@@ -59,11 +59,11 @@ module.exports = {
     // 社交图标，显示于博主信息栏和页脚栏
     // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
     icons: [
-      {
-        iconClass: "icon-youjian",
-        title: "发邮件",
-        link: "mailto:1018622558@qq.com",
-      },
+      // {
+      //   iconClass: "icon-youjian",
+      //   title: "发邮件",
+      //   link: "mailto:1018622558@qq.com",
+      // },
       {
         iconClass: "icon-github",
         title: "GitHub",

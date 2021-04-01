@@ -55,7 +55,7 @@ module.exports = [
     {
       transformer: (timestamp, lang) => {
         const dayjs = require('dayjs') // https://day.js.org/
-        return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
+        return dayjs(timestamp).format('YYYY/MM/DD')
       },
     },
   ],
