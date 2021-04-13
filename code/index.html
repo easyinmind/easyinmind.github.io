@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+const obj = {
+  a: 1,
+  b: {
+    b1: 'b1'
+  },
+  c: [1,2]
+}
+// 循环引用
+obj.d = obj
+cloneDeep(obj)
+function cloneDeep(obj, map = new Map()) {
+  // 只有第一次调用会创建map，后续不会创建
+  if(!map.size) {
+    console.log("第一次调用，创建map", map)
+  }else {
+    console.log('map有值，是第一次创建的', map)
+  }
+  // obj：string/number/boolean/Symbol/undefined/function/null
+  // 1 值类型和函数直接返回，不做深入拷贝
+  if(typeof obj !== 'object' || obj === null) {
+      return obj
+  }
+  // 2 判断需要拷贝的值是对象还是数组，并设置空值（可以增加其它类型：Map、Set）
+  const result = Array.isArray(obj) ? [] : {}
+  // 3 判断当值对象是否已经遍历过，如果已经遍历过说明是循环引用，不遍历直接返回
+  if(map.get(obj)) {
+      // obj.d 循环引用了 obj
+      console.log('循环引用', map.get(obj))
+      return map.get(obj)
+  }
+  // 4 将遍历过的对象放入 map（保证不会反复遍历）
+  map.set(obj, result)
+  // 5 遍历对象
+  for(const k in obj) {
+      // 6 判断是否是自有属性
+      if(obj.hasOwnProperty(k)) {
+          // 7 递归赋值，传入map（第一次调用时创建的map）
+          result[k] = cloneDeep(obj[k], map) 
+      } 
+  }
+  return result
+}
+  </script>
+
+</body>
+</html>
