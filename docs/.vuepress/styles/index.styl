@@ -58,8 +58,15 @@ body .vuepress-plugin-demo-block__wrapper
     svg
       fill: $accentColor !important;
 div,
+input,
 .card-box
   border-radius: 0 !important
+
+.content-wrapper h2
+  font-size 1.2rem
+
+.content-wrapper h1
+  font-size 1.6rem
 
 #app .sidebar > .sidebar-links > li:not(:first-child)
   margin-top: 0
@@ -68,4 +75,31 @@ div,
   .sidebar-heading
     // font-weight: normal
 
+.sidebar > .sidebar-links li a
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+  
+.sidebar > .sidebar-links > li a::before
+  content ""
+  display inline-block
+  margin-right 10px
+  margin-bottom 2px
+  height 6px
+  width 6px
+  border-radius: 50%
+  background-color var(--textColor)
 
+.sidebar .sidebar-sub-headers > li a::before
+  content ""
+  display inline-block
+  margin-right 10px
+  margin-bottom 3px
+  height 4px
+  width 4px
+  border-radius: 50%
+  background-color var(--textColor)
+
+
+.main-right .tags-wrapper .tags a
+  border-radius 0
