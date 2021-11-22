@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="./2.promise.js"></script> -->
+    <script src="./3.科里化.js"></script>
+  </head>
+  <body></body>
+  <script>
+    // function deepClone(obj, map = new WeakMap()) {
+    //   if (typeof obj !== "object" || obj === null) {
+    //     return obj;
+    //   }
+    //   const result = Array.isArray(obj) ? [] : {};
+    //   if (map.get(obj)) {
+    //     return map.get(obj);
+    //   }
+    //   map.set(obj, result);
+
+    //   for (const k in obj) {
+    //     if (obj.hasOwnProperty(k)) {
+    //       result[k] = deepClone(obj[k]);
+    //     }
+    //   }
+    //   return result;
+    // }
+
+    // function create(obj) {
+    //   const F = function() {};
+    //   F.prototype = obj;
+    //   return new F();
+    // }
+
+    // function myNew(constructor, ...args) {
+    //   const obj = {};
+    //   obj.__proto__ = Object.create(constructor.prototype);
+
+    //   const result = constructor.call(...args);
+    //   return result instanceof Object ? result : obj;
+    // }
+  </script>
+</html>
