@@ -20,9 +20,6 @@ jobs:
         run: |
           npm ci
           npm run build
-          cd docs/.vuepress/dist
-          echo 'blog.easyinmind.top' > CNAME
-          cd -
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
@@ -31,6 +28,14 @@ jobs:
           folder: docs/.vuepress/dist # The folder the action should deploy.
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN_CI }}
+          
+  # run: |
+  #   npm ci
+  #   npm run build      
+  #   cd docs/.vuepress/dist
+  #   echo 'blog.easyinmind.top' > CNAME
+  #   cd -
+          
 # jobs:
 #   build-and-deploy:
 #     runs-on: ubuntu-latest
